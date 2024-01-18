@@ -9,7 +9,7 @@
     <Authors>VoidBehemoth</Authors>
     <Description>A template for creating general-purpose mods for Town of Salem 2.</Description>
     <PackageTags>dotnet-new;templates</PackageTags>
-    <PackageProjectUrl>https://github.com/voidbehemoth</PackageProjectUrl>
+    <PackageProjectUrl>https://github.com/voidbehemoth/SML-Mod-Template</PackageProjectUrl>
 
     <PackageType>Template</PackageType>
     <TargetFramework>netstandard21</TargetFramework>
