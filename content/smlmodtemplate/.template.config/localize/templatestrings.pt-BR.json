@@ -1,0 +1,6 @@
+{
+  "author": "VoidBehemoth",
+  "name": "SalemModLoader Mod",
+  "postActions/restore/description": "Restore NuGet packages required by this project.",
+  "postActions/restore/manualInstructions/default/text": "Run 'dotnet restore'"
+}

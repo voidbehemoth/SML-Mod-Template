@@ -1,0 +1,75 @@
+{
+    "$schema": "http://json.schemastore.org/template",
+    "author": "VoidBehemoth",
+    "classifications": [ "Common", "ClassLib", "Mod" ],
+    "identity": "ExampleTemplate.AsyncProject",
+    "name": "SalemModLoader Mod",
+    "shortName": "smlmod",
+    "sourceName":"ModName",
+    "preferNameDirectory": true,
+    "tags": {
+      "language": "C#",
+      "type": "project"
+    },
+    "symbols": {
+        "ModLowerCaseReplace": {
+            "type": "derived",
+            "valueSource": "name",
+            "valueTransform": "ToLowercase",
+            "replaces": "ModLowerCaseName"
+        },
+        "ModAuthorCaseReplace": {
+            "type": "derived",
+            "valueSource": "modAuthor",
+            "valueTransform": "ToLowercase",
+            "replaces": "ModLowerCaseAuthor"
+        },
+        "version": {
+            "type": "parameter",
+            "datatype": "text",
+            "defaultValue": "1.0.0",
+            "replaces": "ModVersion"
+        },
+        "description": {
+            "type": "parameter",
+            "datatype": "text",
+            "defaultValue": "",
+            "replaces": "ModDescription"
+        },
+        "modAuthor": {
+            "type": "parameter",
+            "datatype": "text",
+            "defaultValue": "Me",
+            "replaces": "ModAuthor"
+        },
+        "steamLibrary": {
+            "type": "parameter",
+            "datatype": "text",
+            "defaultValue": "",
+            "replaces": "SteamLibraryReplace"
+        }
+    },
+    "forms": {
+        "ToLowercase": {
+            "identifier": "lowerCaseInvariant"
+        }
+    },
+    "postActions": [
+        {
+            "id": "restore",
+            "description": "Restore NuGet packages required by this project.",
+            "manualInstructions": [
+              {
+                "text": "Run 'dotnet restore'"
+              }
+            ],
+            "actionId": "210D431B-A78B-4D2F-B762-4ED3E3EA9025",
+            "continueOnError": true
+        }
+    ],
+    "primaryOutputs": [
+        {
+            "path": "ModName.csproj"
+        }
+    ]
+}

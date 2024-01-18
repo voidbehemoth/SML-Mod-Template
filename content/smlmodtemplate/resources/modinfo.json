@@ -1,0 +1,11 @@
+{
+    "HarmonyId": "ModLowerCaseAuthor.ModLowerCaseName",
+    "DisplayName": "ModName",
+    "Authors": [
+      "ModAuthor"
+    ],
+    "Description": "ModDescription",
+    "Version": "ModVersion",
+    "RequiredMods": [],
+    "Settings": {}
+}
